@@ -1,1 +1,300 @@
+/* Removes browser default spacing around the edges */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
+    font-family: Arial, sans-serif;
+    background-color: #faf7f5;
+    color: #333333;
+}
 
+/* --- Fixed Navigation Bar Styles --- */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    box-sizing: border-box;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d4a373;
+    text-decoration: none;
+}
+
+/* Hide the toggle controller checkbox field entirely */
+#menu-toggle {
+    display: none;
+}
+
+/* Hamburger Icon Wrapper */
+.hamburger-label {
+    display: none; /* Hidden on desktop views */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1010;
+}
+
+.hamburger-label span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #333333;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Desktop Horizontal Links Menu List */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555555;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #d4a373;
+}
+
+/* --- Header Video Banner Styles --- */
+.header-container {
+    position: relative;
+    width: 100vw;
+    height: 70vh; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px; /* Pushes header below fixed navbar position */
+}
+
+/* Background video stretching setup rules */
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Translucent dark backdrop tint layer for readability over text lines */
+.header-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* 40% dark overlay */
+    z-index: 2;
+}
+
+/* Positions typography elements over text backgrounds */
+.header-content {
+    position: relative;
+    z-index: 3;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.header-content h1 {
+    font-size: 3.5rem;
+    margin: 0 0 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.header-content p {
+    font-size: 1.4rem;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* --- Main Content Layout Blocks --- */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+/* Welcome Section block container entries */
+.welcome-section {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.welcome-section h2 {
+    font-size: 2.5rem;
+    color: #d4a373;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Features Grid Matrix Box Items */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    color: #333333;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.feature-card p {
+    color: #777777;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* --- Footer Area Panels --- */
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+
+/* --- Interactive Action Buttons (WhatsApp Elements) --- */
+.order-btn {
+    display: inline-block;
+    text-align: center;
+    background-color: #25D366; /* Official WhatsApp Green */
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 14px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.2);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.order-btn:hover {
+    background-color: #128C7E;
+    transform: translateY(-2px);
+}
+
+/* --- Responsive Media Queries for Mobile Screens --- */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    /* Expose structural navigation icons */
+    .hamburger-label {
+        display: flex;
+    }
+
+    /* Restructure the desktop navigation row items into a sliding block menu */
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        max-height: 0; /* Keeps dropdown hidden by default */
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out, padding 0.3s ease;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 10px 0;
+        font-size: 1.2rem;
+    }
+
+    /* Open the menu down fluidly when checkbox is flipped */
+    #menu-toggle:checked ~ .nav-links {
+        max-height: 300px;
+        padding: 10px 0 20px 0;
+        border-top: 1px solid #f5e6e8;
+    }
+
+    /* Cross hamburger span lines cleanly into an 'X' icon shape */
+    #menu-toggle:checked ~ .hamburger-label span:nth-child(1) {
+        transform: translateY(8.5px) rotate(45deg);
+    }
+
+    #menu-toggle:checked ~ .hamburger-label span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle:checked ~ .hamburger-label span:nth-child(3) {
+        transform: translateY(-8.5px) rotate(-45deg);
+    }
+
+    /* Scale typography size adjustments for mobile devices */
+    .header-content h1 {
+        font-size: 2.2rem;
+    }
+    .header-content p {
+        font-size: 1.1rem;
+    }
+}
