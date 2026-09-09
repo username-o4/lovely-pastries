@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovely's Pastries - Price List</title>
+    <link rel="stylesheet" href="/css/cascading.css">
+</head>
+<body>
+
+    <!-- Fixed Navigation Bar Wrapper -->
+    <nav class="navbar">
+        <a href="#" class="logo">Lovely Pastries</a>
+        
+        <!-- The pure-CSS hamburger menu controller switches -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger-label">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="place_order.html">Place Orders</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="/html_files/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="menu-container">
+        
+        <!-- Welcome Brand Header Section -->
+        <div class="header">
+            <div>
+                <h1>LOVELY Pastries</h1>
+                <p>Delicious Cakes, Pastries & Treats Made with Love</p>
+            </div>
+            <img class="logo-img" src="/images/logo.png" alt="Lovely's Pastries Logo">
+        </div>
+
+        <!-- Cakes Section -->
+        <div class="section-title">Cakes (Buttercream)</div>
+        <div class="grid-container">
+            <div class="menu-item" onclick="openPanel('6 Inches Cake (1 Layer)', '₦12,000', 'Delicious freshly baked 6-inch single layer buttercream cake. Perfect for small intimate celebrations.')">
+                <img src="/images/cake.jpg" alt="6 Inches Cake 1 Layer">
+                <div class="item-name">6 inches Cake (1 Layer)</div>
+                <div class="item-price">₦12,000</div>
+            </div>
+            <div class="menu-item" onclick="openPanel('6 Inches Cake (2 Layers)', '₦80,000', 'Rich 6-inch double layer buttercream cake. Expertly frosted and styled to fit your special moments.')">
+               <img src="/images/bday.png" alt="6 Inches Cake 2 Layers">
+                <div class="item-name">A 2 tier cake</div>
+                <div class="item-price">₦80,000</div>
+            </div>
+                  <div class="menu-item" onclick="openPanel('Birthday cake  celebration','₦35,000','A customed made birthday cake')">
+                <img src="/images/design.png" alt="6 Inches Cake 1 Layer">
+                <div class="item-name">7 inches buttercream (3layers) </div>
+                <div class="item-price">₦35,000</div>
+            </div>
+                  <div class="menu-item" onclick="openPanel('Birthday cake  celebration','₦27,000','A nice buttercream 7inches 2layers cake.')">
+                <img src="/images/fut.png" alt="6 Inches Cake 1 Layer">
+                <div class="item-name">7 inches buttercream (2layers) </div>
+                <div class="item-price">₦27,000</div>
+            </div>
+            <div class="menu-item" onclick="openPanel('7 inches fondant (3layers)','₦45,000','Beautifully baked 7 inches fondant (3layers)' )">
+               <img src="/images/button.png" alt="6 Inches Cake 2 Layers">
+                <div class="item-name">7 inches fondant (3layers)</div>
+                <div class="item-price">₦45,000</div>
+            </div>
+            
+            <div class="menu-item" onclick="openPanel('7 Inches Cake (2 Layers)', '₦120,000', 'Fluffy 7-inch double layer buttercream cake. Great flavor balance and presentation for traditional weddings.')">
+                <img src="/images/cultural.jpeg" alt="7 Inches Cake 2 Layers">
+                <div class="item-name">Traditional wedding cake</div>
+                <div class="item-price">₦120,000</div>
+            </div>
+            <div class="menu-item" onclick="openPanel('8 Inches Cake (3 Layers)', '₦45,000', 'Premium grand 3-layered 8-inch celebration cake. Beautifully finished with premium buttercream toppings.')">
+                <img src="/images/coco.png" alt="8 Inches Cake 3 Layers">
+                <div class="item-name">7inches  (3 Layers) train fondant cake</div>
+                <div class="item-price">₦45,000</div>
+            </div>
+            <div class="menu-item" onclick="openPanel('7 Inches Cake (2 Layers) butter cream', '₦27,000', 'Premium grand 2-layered 7-inch celebration cake. Beautifully finished with premium buttercream toppings.')">
+                <img src="/images/lion.jpeg" alt="8 Inches Cake 3 Layers">
+                <div class="item-name">7inches Cake (2 Layers) butter cream</div>
+                <div class="item-price">₦27,000</div>
+            </div>
+        <div class="menu-item" onclick="openPanel('7 Inches Cake (2 Layers) butter cream', '₦27,000', 'Premium grand 2-layered 7-inch celebration cake. Beautifully finished with premium buttercream toppings.')">
+                <img src="/images/spider.png" alt="8 Inches Cake 3 Layers">
+                <div class="item-name">7inches Cake (2 Layers) butter cream</div>
+                <div class="item-price">₦27,000</div>
+            </div>
+         <div class="menu-item" onclick="openPanel('8 Inches Cake (2 Layers) butter cream', '₦30,000', 'Premium grand 3-layered 8-inch celebration cake. Beautifully finished with premium buttercream toppings.')">
+                <img src="/images/sofia.png" alt="8 Inches Cake 3 Layers">
+                <div class="item-name">8inches Cake (2 Layers) butter cream</div>
+                <div class="item-price">₦30,000</div>
+            </div>
+    </div>
+        <!-- Small Chops Section -->
+        <div class="section-title">Small Chops</div>
+        <div class="grid-container">
+            <div class="menu-item" onclick="openPanel('Small Chops Pack A', '₦1,000', 'A perfect bite-sized snack pack containing: 1 crispy Spring Roll, 1 savory Samosa, and 2 fluffy Puff Puffs.')">
+               <img src="/images/chop.jpeg" alt="Small Chops Pack A">
+                <div class="item-name">Small Chops Pack A</div>
+                <div class="item-price">₦1,000</div>
+            </div>
+            <div class="menu-item" onclick="openPanel('Small Chops Pack B', '₦2,000', 'Shareable snack variety pack featuring: 2 golden Spring Rolls, 2 savory Samosas, and 2 sweet Puff Puffs.')">
+                <img src="/images/chop.jpeg" alt="Small Chops Pack B">
+                <div class="item-name">Small Chops Pack B</div>
+                <div class="item-price">₦2,000</div>
+            </div>
+             <div class="menu-item" onclick="openPanel('Puff Puff', '₦5,000', 'Shareable snack variety pack featuring: 2 golden Spring Rolls, 2 savory Samosas, and 2 sweet Puff Puffs.')">
+                <img src="/images/small.png" alt="Small Chops Pack B">
+                <div class="item-name">Puff Puff</div>
+                <div class="item-price">₦5,000</div>
+            </div>
+            <div class="menu-item" onclick="openPanel('Samosa and spring roll', '₦5,000', 'Shareable snack variety pack featuring: 2 golden Spring Rolls, 2 savory Samosas, and 2 sweet Puff Puffs.')">
+                <img src="/images/pastries.png" alt="Small Chops Pack B">
+                <div class="item-name">Samosa and spring roll</div>
+                <div class="item-price">₦5,000</div>
+            </div> 
+            <div class="menu-item" onclick="openPanel('Samosa and spring roll', '₦5,000', 'Shareable snack variety pack featuring: 2 golden Spring Rolls, 2 savory Samosas, and 2 sweet Puff Puffs.')">
+                <img src="/images/bons.png" alt="Small Chops Pack B">
+                <div class="item-name">Small chops</div>
+                <div class="item-price">₦5,000</div>
+            </div>
+        </div>
+
+        <!-- Meat Pie Section -->
+        <div class="section-title">Meat Pie</div>
+        <div class="grid-container">
+            <div class="menu-item" onclick="openPanel('Small Meat Pie', '₦600', 'Flaky pastry crust filled with perfectly seasoned minced meat and diced vegetables.')">
+                <img src="/images/meat.jpeg" alt="Small Meat Pie">
+                <div class="item-name">Small Meat Pie</div>
+                <div class="item-price">₦600</div>
+            </div>
+            <div class="menu-item" onclick="openPanel('Medium Meat Pie', '₦1,300', 'Generously sized flaky pastry filled to the brim with rich seasoned minced beef filling.')">
+                <img src="/images/meat.jpeg" alt="Medium Meat Pie">
+                <div class="item-name">Medium Meat Pie</div>
+                <div class="item-price">₦1,300</div>
+            </div>
+              <div class="menu-item" onclick="openPanel('Medium Meat Pie', '₦1,300', 'Generously sized flaky pastry filled to the brim with rich seasoned minced beef filling.')">
+                <img src="/images/meat_pie.png" alt="Medium Meat Pie">
+                <div class="item-name">Medium Meat Pie</div>
+                <div class="item-price">₦1,300</div>
+            </div>
+        </div>
+
+        <!-- Parfait & Yogurt Section -->
+        <div class="section-title">Parfait & Yogurt</div>
+        <div class="grid-container">
+            <div class="menu-item" onclick="openPanel('Small Cup Parfait', '₦3,000', 'Creamy layered Greek yogurt breakfast cup topped with fresh seasonal berries and crunchy granola.')">
+                <img src="/images/parfait.jpeg" alt="Small Cup Parfait">
+                <div class="item-name">Small Cup Parfait</div>
+                <div class="item-price">₦3,000</div>
+            </div>
+            <div class="menu-item" onclick="openPanel('Yogurt (35cl)', '₦1,500', 'Refreshing, smooth, and naturally sweetened house-blend yogurt drink in a convenient 35cl bottle.')">
+                <img src="/images/yogurt.jpeg" alt="Yogurt 35cl">
+                <div class="item-name">Yogurt (35cl)</div>
+                <div class="item-price">₦1,500</div>
+            </div>
+         <div class="menu-item" onclick="openPanel('Yogurt (35cl)', '₦1,500', 'Refreshing, smooth, and naturally sweetened house-blend yogurt drink in a convenient 35cl bottle.')">
+                <img src="/images/yog.png" alt="Yogurt 35cl">
+                <div class="item-name">Yogurt (35cl)</div>
+                <div class="item-price">₦1,500</div>
+            </div>
+    <div class="menu-item" onclick="openPanel('Small Cup Parfait', '₦3,000', 'Creamy layered Greek yogurt breakfast cup topped with fresh seasonal berries and crunchy granola.')">
+                <img src="/images/parf.jpeg" alt="Small Cup Parfait">
+                <div class="item-name">Small Cup Parfait</div>
+                <div class="item-price">₦3,000</div>
+            </div>
+
+ </div>
+        <!-- Verification Signature Frame -->
+        <div style="width: 100%; display: inline-block; margin-top: 30px; margin-bottom: 20px;">
+            <img src="/images/signed.jpeg" style="float: right; max-width: 150px; border-radius: 4px;" alt="Signature Seal">
+        </div>
+    </div>
+
+    <!-- Background Blur Overlay Elements -->
+    <div class="overlay" id="overlay" onclick="closePanel()"></div>
+
+    <!-- Interactive Drawer Side Panel Block -->
+    <div class="side-panel" id="sidePanel">
+        <button class="close-btn" onclick="closePanel()">&times;</button>
+        <div class="panel-content">
+            <div class="panel-title" id="panelTitle">Item Name</div>
+            <p class="panel-description" id="panelDescription">Feel free to custom your orders </p>
+            <a href="place_order.html" class="order-btn" id="whatsappOrderBtn">Customize your order</a>
+        </div>
+    </div>
+
+    <!-- Scrolling Marquee Footer -->
+    <footer>
+        <marquee>
+            <span>Made with love | Our Motto: Great satisfaction comes with great taste</span>
+        </marquee>
+    </footer>
+
+    <!-- Core Business Interaction Logic Scripts -->
+    <script src="/script/bake.js"></script>
+</body>
+</html>
