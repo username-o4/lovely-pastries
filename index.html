@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovely Pastries</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar Wrapper -->
+    <nav class="navbar">
+        <a href="#" class="logo">Lovely Pastries</a>
+        
+        <!-- The invisible switch that tracks whether the mobile menu is open -->
+        <input type="checkbox" id="menu-toggle">
+
+        <!-- Clickable three-line hamburger icon button -->
+        <label for="menu-toggle" class="hamburger-label">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- Navigation Links Dropdown -->
+        <ul class="nav-links">
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="place_order.html">Place an order</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Video Banner Section -->
+    <header class="header-container">
+        <!-- The video element with automatic loop and muted attributes -->
+        <video autoplay loop muted playsinline class="bg-video">
+            <source src="/videos/home.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Text overlay sitting cleanly on top of the video layer -->
+        <div class="header-content">
+            <h1>Freshly Baked Daily</h1>
+            <p>From custom cakes to artisanal pies, baked fresh daily.</p>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <h2>Welcome to Lovely Pastries</h2>
+            <p>
+                Step into a world of sweetness and warmth. At Lovely Pastries, we believe that every batch tells a story. 
+                Using only the finest, locally-sourced ingredients, our passionate bakers craft delightful treats that bring 
+                joy to your celebrations—and your everyday moments. Whether you are stopping by for your morning croissant 
+                or designing the wedding cake of your dreams, we are here to make life taste a little more delicious.
+            </p>
+        </section>
+
+        <!-- Features / Highlights Section -->
+        <section class="features-grid">
+            <div class="feature-card">
+                <h3>Artisanal Baking</h3>
+                <p>Every pastry is handcrafted from scratch using traditional methods, ensuring unparalleled texture and rich, authentic flavor in every bite.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Custom Cakes</h3>
+                <p>Turn your imagination into reality. Work directly with our design team to create beautiful, bespoke cakes tailored perfectly for your special events.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Fresh Ingredients</h3>
+                <p>We source fresh dairy, seasonal fruits, and premium chocolate daily because we know great taste begins with high-quality components.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <marquee>
+            <p>&copy; 2026 Lovely Pastries. All rights reserved. | Tel: (+234)90-637-593-48</p>
+        </marquee>
+    </footer>
+
+</body>
+</html>
