@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+        /* Centering layout applied to the body */
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Centers container vertically on the page */
+            background-color: #fff4f6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .container {
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(216, 90, 127, 0.15);
+            width: 90%;
+            max-width: 550px;
+            background-color: #ffffff;
+            border: 2px solid #ffdae0;
+            box-sizing: border-box; /* Prevents padding from breaking width calculations */
+        }
+        
+        h1 {
+            color: #d85a7f;
+            font-size: 1.8rem;
+            margin-top: 0;
+            text-align: center;
+        }
+        
+        .description-text {
+            color: #4a3b32;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        /* Combined text and button inline wrapper */
+        .chat-inline {
+            display: inline-block;
+            white-space: nowrap; /* Keeps the button attached to the last word snippet */
+        }
+        
+        .btn {
+            background-color: #d85a7f;
+            padding: 6px 16px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(216, 90, 127, 0.2);
+            transition: all 0.3s ease;
+            vertical-align: middle;
+            margin-left: 8px;
+        }
+        
+        .btn:hover {
+            background-color: #b33c60;
+            box-shadow: 0 6px 16px rgba(216, 90, 127, 0.4);
+            transform: translateY(-2px);
+        }
+
+        /* Social media row styles using modern Flexbox alignment */
+        .social-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #fff9fa;
+            padding: 12px 20px;
+            margin: 12px 0;
+            border-radius: 12px;
+            border: 1px solid #ffe3e7;
+        }
+
+        .social-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #4a3b32;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .social-info img {
+            height: 30px;
+            width: 30px;
+            object-fit: contain;
+            border-radius: 4px;
+        }
+
+        .phone-number {
+            font-size: 1rem;
+            color: #d85a7f;
+            font-weight: normal;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, you have reached the Lovely Pastries contact page 🍰</h1>
+        
+        <p class="description-text">
+            Have a question about our daily menu, need to check for allergen options, or want to pre-order a box of happiness for your next celebration? We’re always happy to chat! Drop us a line, give us a ring, or swing by the shop—the oven is warm, and we’ve saved a treat just for you.
+            <span class="chat-inline"><button class="btn" onclick="redirect()">Chat us ✨</button></span>
+        </p>
+        
+        <h1>Follow us on these social media platforms</h1>
+        
+        <!-- Tiktok Row -->
+        <div class="social-row">
+            <div class="social-info">
+                <img src="/images/tiktok.png" alt="TikTok">
+                <span>TikTok</span>
+            </div>
+            <button class="btn">follow 👉</button>
+        </div>
+
+        <!-- WhatsApp Row -->
+        <div class="social-row">
+            <div class="social-info">
+                <img src="/images/whatsapp.jpg" alt="WhatsApp">
+                <span>WhatsApp</span>
+            </div>
+            <p class="phone-number">(+234)90-637-593-48</p>
+        </div>
+    </div>
+
+    <script>
+        function redirect(){
+            window.location.href='place_order.html';
+        }
+    </script>
+</body>
+</html>
